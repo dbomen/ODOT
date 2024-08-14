@@ -1,0 +1,101 @@
+/* @media screen and (max-width: 800px) {
+    
+    .dropDown {
+
+        position: absolute;
+        bottom: 0;
+    }
+} */
+
+body {
+
+    margin: 0px;
+    font-family: monospace;
+    background-color: #1e1e1e;
+    color: whitesmoke;
+}
+
+.dropDownContent {
+
+    opacity: 0;
+}
+
+.dropDown {
+
+    margin-top: 20px;
+    position: absolute;
+    margin-right: 30px;
+    right: 1rem;
+}
+
+.dropDown:hover .dropDownContent {
+
+    opacity: 1;
+}
+
+#mainPageLink {
+
+    text-decoration: none;
+    font-size: 75px;
+    color: #1e1e1e;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+#mainPageLink:hover, #mainPageLink:focus {
+
+    color: whitesmoke;
+}
+
+#headerDiv {
+
+    background-color: #0e0e0e;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.dropDown button {
+
+    border: none;
+    background-color: whitesmoke;
+    color: #0e0e0e;
+    width: 220px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px;
+
+    border: none;
+    border-radius: 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    outline: none;
+
+    box-shadow: 5px 5px 5px 0px #111111;
+}
+
+.dropDown button:focus, .dropDown button:hover {
+
+    color: whitesmoke;
+    background-color: #2000d1;
+}
+
+.dropDownContent:focus-within, #userButton:focus + .dropDownContent {
+
+    opacity: 1;
+}
+
+#userButton {
+
+    color: whitesmoke;
+    background-color: #0e0e0e;
+    cursor: auto;
+}
+
+#userButton:focus, #userButton:hover{
+
+    color: #2000d1;
+}

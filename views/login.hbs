@@ -1,0 +1,21 @@
+<script src="/login.js"></script>
+
+<link rel="stylesheet" href="/loginSingup.css">
+
+<div class="container">
+    <div class="box">
+        <h1>LOGIN</h1>
+        {{!-- <form> --}}
+            <input type="text" id="name" autocomplete="on" placeholder="username" autofocus>
+            <input type="password" id="pass" autocomplete="on" placeholder="password">
+            <button id="loginButton">LOGIN</button>
+            <a href="/signup">SIGNUP</a>
+            {{#if loginMessage}}
+                <div class="errorMessage">
+                    {{loginMessage}}
+                </div>
+            {{/if}}
+        {{!-- </form> --}}
+    </div>
+</div>
+

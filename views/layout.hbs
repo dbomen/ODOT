@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ODOT</title>
+
+        <script src="/layout.js"></script>
+        <link rel="stylesheet" href="/layout.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> {{!-- za font awesome --}}
+
+    </head>
+
+    <body>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> {{!-- za JQuery --}}
+
+        <header>
+            <div id="headerDiv">
+                <div style=""></div>
+                <a href="/" id="mainPageLink">ODOT</a>
+                {{#if userName}}
+                <div class="dropDown">
+                    <button id="userButton"><i class="fa-solid fa-user"></i> {{userName}}</button>
+                    <div class="dropDownContent">
+                        <button id="logoutButton">LOGOUT</button>
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+        </header>
+
+        <main>
+            {{{body}}}
+        </main>
+
+    </body>
+
+</html>

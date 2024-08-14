@@ -1,0 +1,93 @@
+#todoObjectsList .todoObject:has(input[type=checkbox]:checked) #text {
+
+    text-decoration: line-through;
+}
+
+#mainPageLink:hover, #mainPageLink:focus {
+
+    color: #2000d1 !important;
+}
+
+.todoObject, .controller {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.flexItem {
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#text {
+
+    font-size: 40px;
+}
+
+.controller {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#indexMainDiv button {
+
+    border: none;
+    background-color: #1e1e1e;
+    color: whitesmoke;
+    height: 20px;
+    font-size: 25px;
+
+    margin-bottom: 8px;
+
+    cursor: pointer;
+    outline: none;
+    align-self: center;
+}
+
+#indexMainDiv button:hover, #indexMainDiv button:focus {
+
+    color: #FFFFFF;
+    text-shadow: 0px 0px 3px #FFFFFF;
+}
+
+.todoObject input[type="checkbox"] {
+
+    display:flex;
+    transform: scale(2);
+    accent-color: #2000d1;
+    height: 13px;
+    align-self: center;
+    outline: none;
+}
+
+.todoObject input[type="checkbox"]:focus {
+
+    /* accent-color: #1e00a0; */
+    box-shadow: 0px 0px 1px #FFFFFF;
+}
+
+#addTodoObjectInputField {
+    
+    display: none;
+
+    font-family: monospace;
+    width: 200px;
+    height: 20px;
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 5px 5px 5px 0px #111111;
+}
+
+#addTodoObjectButton, #cancelAction {
+
+    display: none;
+}
+  

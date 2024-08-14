@@ -1,0 +1,28 @@
+<script src="/index.js"></script>
+
+<link rel="stylesheet" href="/index.css">
+
+<div id="indexMainDiv">
+    <div id="todoObjectsList">
+        {{#each listOfTodoObjects as |todoObject|}} {{!-- we iterate through todo objects --}}
+            <div id="{{todoObject.todoObjectId}}" class="todoObject">
+                <input type="checkbox" class="flexItem"
+                    {{#if todoObject.checked}}
+                        checked
+                    {{/if}}>
+                <span id="text" class="flexItem">{{todoObject.text}}</span>
+                <button class="flexItem"><i class="fa-solid fa-x"></i></button>
+                <span id="objectErrorMessage" class="flexItem"></span>
+            </div>
+        {{/each}}
+    </div>
+
+    <div class="controller">
+        <button id="addTodoObjectStarterButton"><i class="fa-solid fa-plus"></i></button>
+        <span id="addObjectErrorMessage"></span>
+        <button id="cancelAction"><i class="fa-solid fa-ban"></i></button>
+        <input id="addTodoObjectInputField" type="text" placeholder="Do the chores">
+        <button id="addTodoObjectButton"><i class="fa-solid fa-check"></i></button>
+    </div>
+
+</div>
