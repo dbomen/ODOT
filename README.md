@@ -1,5 +1,8 @@
 # ODOT 1.0.0
 
+> [!IMPORTANT]
+> archived and not in active development
+
 ODOT is a server-client JS web application built with Express. It is a basic todo app that allows users to create an account, which they can later access via the login screen. Upon logging in, users are provided with basic todo app functionalities.
 
 > **FUNCTIONALITIES**
